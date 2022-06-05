@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<sdf version="1.5">
+  <model name="nesnemodel">
+    <pose>0 0 1 0 0 0</pose>
+    <static>0</static>
+    <link name="link">
+      <inertial>
+        <mass>10.0</mass>
+        </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://nesnemodel/meshes/nesnemodel.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <pose frame=''> 0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://nesnemodel/meshes/nesnemodel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Export env variable so that gazebo finds our models -->
+  <env name="GAZEBO_MODEL_PATH"
+       value="$(find ur5_gripper_moveit_config)/models:$(optenv GAZEBO_MODEL_PATH)" />
+  
+  <!-- Launch file parameters -->
+  <arg name="paused"     default="true"/>
+  <arg name="debug"      default="false"/>
+  <arg name="gui"        default="true"/>
+  <arg name="rate"       default="125" />
+  <arg name="world_name" default="$(find ur5_gripper_moveit_config)/worlds/ur5_setup.world" />
+
+
+
+</launch>
